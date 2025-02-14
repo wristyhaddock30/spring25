@@ -2,6 +2,7 @@
 <html>
     <head> 
         <link rel="stylesheet" href="style.css" />
+        <title> Moving Text </title>
     </head>
     <body>
         <h1> Roberto Buendia </h1>
@@ -18,7 +19,15 @@
         <hr>
         <div class = "myDiv"> 
             <h2> This is another header </h2>
-            <p> Here is some more text </p>
+            <p> Here is some more text </p> 
+            <!-- the white text below is the text thats displays on the button -->
+            <button id = "do_something"> opens google in a new tab </button>
+            
+            <script>
+                document.getElementById("do_something").addEventListener("click", function() {
+                    window.open("https://www.google.com", "_blank");
+                });
+            </script>
         </div>
     </body>
 </html>
