@@ -3,9 +3,24 @@
     <head> 
         <link rel="stylesheet" href="style.css" />
         <title> Moving Text </title>
+        <style> 
+            .moving-text {
+                font-size: 24px;
+                font-weight: bold;
+                position: relative;
+                display: inline-block;
+                animation: 3s infinite alternate ease-in-out
+            }
+
+            @keyframes movetext {
+                from { transform: translateX(0);}
+                to { transform: translateX(200px);}
+            }
+        </style>
     </head>
     <body>
         <h1> Roberto Buendia </h1>
+        <p class = ""
         <img id="pic1"
         src = "https://cdn11.bigcommerce.com/s-h2h8t9woje/images/stencil/1280x1280/products/12349/82114/WorthingtonBase_Lantern__64749.1626757225.jpg?c=2"
         />
